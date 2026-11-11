@@ -1,8 +1,22 @@
-# Atlas Turismo
+# Atlas Turismo ✈️
+
+**Gestão de viagens, reservas e pagamentos em um só lugar.**
+
+`PHP 8.2+` · `MySQL 8` · `HTML5` · `CSS3`
 
 Sistema administrativo para uma agência de turismo fictícia, desenvolvido para a P2 de Desenvolvimento Web II da FATEC Itaquera. O enunciado oficial está na raiz do projeto. A proposta de apresentação está em [docs/PROPOSTA_P2.md](docs/PROPOSTA_P2.md).
 
 O sistema permite cadastrar clientes, destinos e pacotes, planejar e operar viagens, confirmar reservas, registrar pagamentos, emitir comprovantes e consultar indicadores, relatórios e auditoria. O funcionário opera o sistema e o administrador também gerencia usuários e consulta a auditoria.
+
+## Funcionalidades
+
+- **Cadastros** de clientes, destinos e pacotes, com pesquisa e inativação.
+- **Viagens e reservas** com controle de capacidade e proteção contra reservas simultâneas acima do limite.
+- **Pagamentos** parciais ou integrais, com cálculo de saldo e comprovante imprimível.
+- **Painel e relatórios** com indicadores reais, filtros, exportação CSV e impressão.
+- **Segurança e gestão** com autenticação, perfis de acesso, proteção CSRF e auditoria.
+
+Para conhecer a apresentação acadêmica, consulte a [proposta da P2](docs/PROPOSTA_P2.md). Para testar os fluxos, siga o [roteiro de demonstração](docs/DEMONSTRACAO.md).
 
 ## Requisitos
 
