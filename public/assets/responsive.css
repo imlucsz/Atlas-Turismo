@@ -1,0 +1,40 @@
+@media (max-width: 900px) {
+    body .app-shell { grid-template-columns: minmax(0,1fr); }
+    body .sidebar { position: static; height: auto; padding: .85rem 1rem; gap: .55rem; }
+    .sidebar nav { display: flex; gap: .25rem; flex-wrap: wrap; }
+    .sidebar .nav-label, .sidebar .sidebar-foot { display: none; }
+    .sidebar .nav-link { padding: .37rem .58rem; font-size: .83rem; }
+    .login-page .login-aside { gap: 2rem; }
+    .login-page .login-caption { display: none; }
+}
+@media (max-width: 650px) {
+    body .login-page, .content-grid, .form-grid { grid-template-columns: minmax(0,1fr); }
+    .login-intro h1 { font-size: 2.4rem !important; }
+    .login-intro p { font-size: 1rem !important; }
+    .topbar .topbar-context { display: none; }
+    body .topbar { justify-content: flex-end; }
+    .filters, .toolbar > form:not(.filters) { width: 100%; }
+    .filters > .field, .toolbar > form > .field { flex: 1 1 100%; }
+    .table-wrap table { min-width: 580px; }
+    .main .page-header { margin-bottom: 1.15rem; }
+    .metric-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (min-width: 1440px) {
+    .metric-grid { grid-template-columns: repeat(6,minmax(0,1fr)); }
+}
+@media print {
+    @page { margin: 14mm; }
+    body { background: #fff !important; color: #000 !important; font-size: 10pt; }
+    .no-print, .skip-link, .pagination, .toolbar form, .alert, .button { display: none !important; }
+    body .print-only { display: block; }
+    body .app-shell, body .content-grid { display: block; }
+    body .main, body .panel { padding: 0; max-width: none; margin: 0 0 .8rem; border: 0; box-shadow: none; }
+    .main .page-header { margin: 0 0 1rem; }
+    .page-header h1 { font-size: 20pt; }
+    .table-wrap { overflow: visible; }
+    .table-wrap table { min-width: 0; font-size: 9pt; }
+    th, td { padding: .35rem; }
+    thead { display: table-header-group; }
+    tr, .detail-grid > div { break-inside: avoid; }
+    body a { color: #000; text-decoration: none; }
+}
