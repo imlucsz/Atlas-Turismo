@@ -27,7 +27,7 @@ function flash_view(): void
 
 function brand_view(): void
 {
-    ?><a class="brand" href="<?= h(url('dashboard')) ?>"><span class="brand-mark" aria-hidden="true">✦</span><span>Atlas<span class="brand-sub"> TURISMO</span></span></a><?php
+    ?><a class="brand" href="<?= h(url('dashboard')) ?>"><span class="brand-mark" aria-hidden="true">✈</span><span>Atlas<span class="brand-sub"> TURISMO</span></span></a><?php
 }
 
 function nav_view(string $current): void
@@ -93,6 +93,11 @@ function login_view(): void
             <span class="eyebrow">GESTÃO DE VIAGENS</span>
             <h1>Planeje viagens.<br>Cuide de cada reserva.</h1>
             <p>Organize destinos, partidas, passageiros e pagamentos em um só lugar.</p>
+            <ul class="login-features">
+                <li>Destinos &amp; pacotes</li>
+                <li>Reservas &amp; pagamentos</li>
+                <li>Relatórios gerenciais</li>
+            </ul>
         </div>
         <div class="login-caption">ATLAS TURISMO</div>
     </section>
