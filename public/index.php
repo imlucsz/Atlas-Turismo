@@ -6,7 +6,7 @@ require_once __DIR__ . '/../app/core/http.php';
 require_once __DIR__ . '/../app/core/auth.php';
 require_once __DIR__ . '/../app/views/layout.php';
 
-header("Content-Security-Policy: default-src 'none'; style-src 'self'; img-src 'self' data:; form-action 'self'; frame-ancestors 'none'; base-uri 'none'");
+header("Content-Security-Policy: default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self' data:; form-action 'self'; frame-ancestors 'none'; base-uri 'none'");
 header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: no-referrer');
 header('Cache-Control: no-store');

@@ -1,22 +1,24 @@
 @media (max-width: 900px) {
     body .app-shell { grid-template-columns: minmax(0,1fr); }
-    body .sidebar { position: static; height: auto; padding: .85rem 1rem; gap: .55rem; }
+    body .sidebar { position: static; height: auto; padding: .9rem 1rem; gap: .6rem; }
     .sidebar nav { display: flex; gap: .25rem; flex-wrap: wrap; }
     .sidebar .nav-label, .sidebar .sidebar-foot { display: none; }
-    .sidebar .nav-link { padding: .37rem .58rem; font-size: .83rem; }
+    .sidebar .nav-link { padding: .4rem .6rem; font-size: .83rem; }
+    .sidebar .nav-link:hover { transform: none; }
     .login-page .login-aside { gap: 2rem; }
     .login-page .login-caption { display: none; }
 }
 @media (max-width: 650px) {
     body .login-page, .content-grid, .form-grid { grid-template-columns: minmax(0,1fr); }
-    .login-intro h1 { font-size: 2.4rem !important; }
-    .login-intro p { font-size: 1rem !important; }
+    body .login-aside { min-height: 40vh; padding: 1.5rem; }
+    .login-intro h1 { font-size: 2.2rem !important; }
+    .login-intro p { font-size: .98rem !important; }
     .topbar .topbar-context { display: none; }
     body .topbar { justify-content: flex-end; }
     .filters, .toolbar > form:not(.filters) { width: 100%; }
     .filters > .field, .toolbar > form > .field { flex: 1 1 100%; }
     .table-wrap table { min-width: 580px; }
-    .main .page-header { margin-bottom: 1.15rem; }
+    .main .page-header { margin-bottom: 1.3rem; }
     .metric-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
 @media (min-width: 1440px) {
